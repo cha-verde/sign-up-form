@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "norse-bold";
+    src:
+        url("fonts/norse-bold-webfont.woff2") format("woff2"),
+        url("fonts/norse-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ostrichsans";
+    src:
+        url("fonts/ostrichsans-bold-webfont.woff2") format("woff2"),
+        url("fonts/ostrichsans-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    display: flex;
+}
+
+.left-side {
+    background-color: blue;
+    height: 100vh;
+    position: relative;
+}
+
+.side-image {
+    height: 100%;
+    width: auto;
+}
+
+.side-text {
+    background: rgb(0 0 0 / 40%);
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.left-side .credit{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+}
+
+
+.side-text .logo {
+    height: 100px;
+    padding: 10px;
+}
+
+.side-text h1 {
+    color: white;
+    font: 4em "norse-bold", sans-serif;
+}
+
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    padding-right: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.right-side .form {
+    width: 75%;
+    padding: 10px 0;
+}
+
+.right-side .name,
+.contact-info,
+.passwords {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.right-side form input {
+    border: #E5E7EB 2px solid;
+    border-radius: 3px;
+    height: 25px;
+    padding: 15px 10px;
+}
+
+.right-side form label{
+    font-size: 12px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+ 
+
+}
+.right-side form input:focus {
+    border-color: rgb(110, 147, 248);
+    outline: none;
+}
+
+.right-side form input:invalid {
+    border-color: rgb(255, 128, 128);
+}
+
+.right-side form button {
+    background-color: #596D48;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 40px;
+    box-shadow: 1px 1px 5px 1px rgb(0 0 0 / .2);
+}
+
+.right-side form button:hover {
+    cursor: pointer;
+}
+
+.right-side .signup-link{
+    color: #596D48;
+
+}
