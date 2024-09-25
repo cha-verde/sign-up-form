@@ -107,6 +107,14 @@ body {
     padding: 10px 0;
 }
 
+.right-side{
+    padding-left: 20px;
+}
+
+.right-side form{
+    padding: 40px 0;
+}
+
 .right-side form input {
     border: #E5E7EB 2px solid;
     border-radius: 3px;
@@ -141,6 +149,10 @@ body {
 
 .right-side form button:hover {
     cursor: pointer;
+}
+
+.right-side form .passwords{
+    padding-bottom: 30px;
 }
 
 .right-side .signup-link{
